@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+}
+.calcbody {
+    height: 75%;
+    width: 20%;
+    border: solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #C0EAE1;
+    box-shadow: 0px 0px 19px 0px rgba(137, 143, 141,0.75);
+}
+.calcbody > * {
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    background-color: #F8FEFD;
+    color: #191F1E;
+}
+.results {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.results > p {
+    padding: 0;
+    margin: 0;
+}
+.equals {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.highlight {
+    box-shadow: 0px 5px 1px 1px rgba(152,167,164,1);
+    transition: box-shadow 0.2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.error {
+    display: none !important;
+}
+@media only screen and (max-width: 414px) {
+    .calcbody {
+        height: 70%;
+        width: 80%;
+    }
+}
+@media only screen 
+    and (min-width: 769px)
+    and (max-width: 1024px) {
+    .calcbody {
+        width: 60%;
+    }
+}
+@media only screen 
+    and (min-width: 1024px)
+    and (max-width: 1200px) {
+    .calcbody {
+        width: 60%;
+    }
+}
+@media only screen 
+    and (min-width: 1200px)
+    and (max-width: 1400px) {
+    .calcbody {
+        width: 40%;
+    }
+}
