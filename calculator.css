@@ -53,13 +53,22 @@ body {
 .error {
     display: none !important;
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 500px) {
     .calcbody {
         height: 70%;
         width: 80%;
     }
 }
-@media only screen and (min-width: 769px) {
+@media only screen 
+    and (min-width: 500px)
+    and (max-width: 900px) {
+    .calcbody {
+        width: 60%;
+    }
+}
+@media only screen 
+    and (min-width: 900px)
+    and (max-width: 1200px) {
     .calcbody {
         width: 40%;
     }
